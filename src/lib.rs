@@ -1,14 +1,11 @@
+pub mod country_code;
+
 use pyo3::prelude::*;
+use country_code::country_code_validator;
 
-/// Formats the sum of two numbers as string.
-#[pyfunction]
-fn sum_as_string(a: usize, b: usize) -> PyResult<String> {
-    Ok((a + b).to_string())
-}
 
-/// A Python module implemented in Rust.
 #[pymodule]
-fn validX(_py: Python, m: &PyModule) -> PyResult<()> {
-    m.add_function(wrap_pyfunction!(sum_as_string, m)?)?;
+fn validx(_py: Python, m: &PyModule) -> PyResult<()> {
+    m.add_function(wrap_pyfunction!(country_code_validator, m)?)?;
     Ok(())
 }
