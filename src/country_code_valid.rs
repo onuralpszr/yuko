@@ -15,7 +15,7 @@ pub fn get_code_type(format_type: &String) -> String {
 }
 
 #[pyfunction]
-pub fn country_code_validator(country_code: String) -> PyResult<bool> {
+pub fn country_code(country_code: String) -> PyResult<bool> {
     let alpha_2 = vec![
         "AD", "AE", "AF", "AG", "AI", "AL", "AM", "AO", "AQ", "AR", "AS", "AT", "AU", "AW", "AX",
         "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BL", "BM", "BN", "BO", "BQ",
