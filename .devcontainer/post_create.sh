@@ -1,7 +1,7 @@
 set -euxo pipefail
 
 sudo apt-get update
-sudo apt-get install -y python3-dev python3-pip python3-venv libclang-dev bat exa 
+sudo apt-get install -y python3-dev python3-pip python3-venv libclang-dev bat exa
 sudo python3 -m pip install cffi virtualenv pipx
 
 pipx ensurepath
