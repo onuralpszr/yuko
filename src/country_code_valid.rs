@@ -91,16 +91,13 @@ pub fn country_code(country_code: String) -> PyResult<bool> {
     .map(String::from)
     .collect::<Vec<String>>();
 
-
     let code_type: String = get_code_type(&country_code);
     if code_type == "alpha2" {
-        return Ok(alpha_2.iter().any(|x| x == &country_code))
-    }
-    else if code_type == "alpha3" {
-        return Ok(alpha_3.iter().any(|x| x == &country_code))
-    }
-    else if code_type == "numeric" {
-        return Ok(numeric.iter().any(|x| x == &country_code))
+        return Ok(alpha_2.iter().any(|x| x == &country_code));
+    } else if code_type == "alpha3" {
+        return Ok(alpha_3.iter().any(|x| x == &country_code));
+    } else if code_type == "numeric" {
+        return Ok(numeric.iter().any(|x| x == &country_code));
     }
 
     return Ok(false);

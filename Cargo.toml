@@ -11,4 +11,3 @@ crate-type = ["cdylib"]
 [dependencies]
 pyo3 = "0.18.1"
 regex = "1.10.2"
-

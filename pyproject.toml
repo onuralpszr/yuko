@@ -23,3 +23,16 @@ classifiers = [
 [tool.maturin]
 python-source = "python"
 features = ["pyo3/extension-module"]
+
+
+[tool.mypy]
+python_version = "3.7"
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+warn_no_return = true
+ignore_missing_imports = true
+exclude = '/venv/,.venv/,.git/,.tox/,.eggs/'
+
+[tool.codespell]
+ignore-words-list = 'crate,fo,fro,nam,som,tha,caf'
+skip = './.git,./target,./test-crates/venvs,./guide/book,src/country_code_valid.rs'
