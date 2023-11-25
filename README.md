@@ -26,6 +26,10 @@ False
 True
 >>> validx.country_code('INVALID')
 False
+>>> validx.ip_address("127.0.0.1","ipv4")
+True
+>>> validx.ip_address("257.0.0.1","ipv4")
+False
 ```
 
 ## 🔮 Features
