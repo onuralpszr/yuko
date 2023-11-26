@@ -1,6 +1,6 @@
 use pyo3::prelude::*;
 
-pub fn get_code_type(format_type: &String) -> String {
+fn get_code_type(format_type: &String) -> String {
     // """Returns the type of country code."""
     if format_type.chars().all(|x| x.is_numeric()) {
         return "numeric".to_string();
