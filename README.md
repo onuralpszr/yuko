@@ -2,7 +2,10 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/onuralpszr/validX/main.svg)](https://results.pre-commit.ci/latest/github/onuralpszr/validX/main)
-[![CI](https://github.com/onuralpszr/validX/actions/workflows/CI.yml/badge.svg)](https://github.com/onuralpszr/validX/actions/workflows/CI.yml)
+[![Build & Release - CI](https://github.com/onuralpszr/validX/actions/workflows/CI.yml/badge.svg)](https://github.com/onuralpszr/validX/actions/workflows/CI.yml)
+[![Coverage CI](https://github.com/onuralpszr/validX/actions/workflows/Coverage-CI.yml/badge.svg)](https://github.com/onuralpszr/validX/actions/workflows/Coverage-CI.yml)
+[![codecov](https://codecov.io/gh/onuralpszr/validX/graph/badge.svg?token=NWUYIBUCBA)](https://codecov.io/gh/onuralpszr/validX)
+
 
 ValidX is a Python package that provides Rust-backed validators for common validation tasks. This project aims to enhance the performance of validation operations by leveraging Rust's speed ⚡️, while still being easily accessible from Python.
 
