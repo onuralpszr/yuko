@@ -7,7 +7,7 @@ pub fn md5(value: String) -> PyResult<bool> {
 
     let re: Regex = Regex::new(r"^[0-9a-f]{32}$").unwrap();
 
-    if re.is_match(&value) {
+    if re.is_match(&value.to_lowercase()) {
         return Ok(true);
     }
     return Ok(false);
@@ -17,7 +17,7 @@ pub fn md5(value: String) -> PyResult<bool> {
 pub fn sha1(value: String) -> PyResult<bool> {
     let re: Regex = Regex::new(r"^[0-9a-f]{40}$").unwrap();
 
-    if re.is_match(&value) {
+    if re.is_match(&value.to_lowercase()) {
         return Ok(true);
     }
     return Ok(false);
