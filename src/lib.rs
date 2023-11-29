@@ -1,10 +1,12 @@
 pub mod country_code_valid;
+pub mod domain_valid;
 pub mod email_valid;
 pub mod hashes_valid;
 pub mod ip_address_valid;
 pub mod mac_address_valid;
 
 use country_code_valid::country_code;
+use domain_valid::domain;
 use email_valid::email;
 use hashes_valid::{md5, sha1, sha224, sha256, sha512};
 use ip_address_valid::ip_address;
@@ -22,5 +24,6 @@ fn validx(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(sha256, m)?)?;
     m.add_function(wrap_pyfunction!(sha512, m)?)?;
     m.add_function(wrap_pyfunction!(mac_address, m)?)?;
+    m.add_function(wrap_pyfunction!(domain, m)?)?;
     Ok(())
 }
