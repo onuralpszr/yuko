@@ -22,4 +22,4 @@ import validx
     ],
 )
 def test_domain(domain: str, expected: bool):
-    assert validx.domain(domain) == expected
+    assert validx.domain(domain, False, False) == expected
