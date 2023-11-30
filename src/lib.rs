@@ -5,7 +5,7 @@ pub mod ip_address_valid;
 
 use country_code_valid::country_code;
 use email_valid::email;
-use hashes_valid::{md5, sha1, sha224, sha256};
+use hashes_valid::{md5, sha1, sha224, sha256, sha512};
 use ip_address_valid::ip_address;
 use pyo3::prelude::*;
 
@@ -18,5 +18,6 @@ fn validx(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(sha1, m)?)?;
     m.add_function(wrap_pyfunction!(sha224, m)?)?;
     m.add_function(wrap_pyfunction!(sha256, m)?)?;
+    m.add_function(wrap_pyfunction!(sha512, m)?)?;
     Ok(())
 }
