@@ -33,6 +33,20 @@ False
 True
 >>> validx.ip_address("257.0.0.1","ipv4")
 False
+>>> validx.ip_address("1:2:3:4:5:6:7:8", "ipv6")
+True
+>>> validx.ip_address("0.0.0.0", "both")
+True
+>>> validx.domain("example.com")
+True
+>>> validx.domain("example.com.")
+False
+>>> validx.domain("example")
+False
+>>> validx.mac_address("01:23:45:67:ab:CD")
+True
+>>> validx.mac_address("00:1A:2B:3C:4D:ZZ")
+False
 ```
 
 ## 🔮 Features
@@ -41,6 +55,9 @@ ValidX provides validators of the following:
 
 - Email Validation
 - Country Code(Alpha-3, Alpha-2, Numeric) Validation
+- IP Address (ipv4, ipv6, both) Validation
+- Domain Validation
+- Mac Address Validation
 
 ## 💻 Adding New Validators
 If you want to contribute a new validator, please follow these guidelines:
