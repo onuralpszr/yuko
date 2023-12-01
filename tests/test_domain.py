@@ -19,6 +19,7 @@ import validx
         ("test123.test-domain.com", True),
         ("example_domain.com", True),
         (".example12.com", False),
+        ("example  12.com", False),
     ],
 )
 def test_domain(domain: str, expected: bool):
