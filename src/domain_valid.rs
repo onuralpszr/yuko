@@ -12,13 +12,8 @@ pub fn domain(domain: String, rfc_2782: bool, rfc_1034: bool) -> PyResult<bool> 
             if rfc_1034 { ".$" } else { "$" }
         );
 
-        let idna_value = match idna::domain_to_ascii(&domain) {
-            Ok(result) => result,
-            Err(_) => return Ok(false),
-        };
-
         let domain_regex = Regex::new(&domain_regex).unwrap();
-        return Ok(domain_regex.is_match(&idna_value));
+        return Ok(domain_regex.is_match(&domain));
     }
 
     return Ok(false);
