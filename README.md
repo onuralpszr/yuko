@@ -47,6 +47,7 @@ False
 True
 >>> validx.mac_address("00:1A:2B:3C:4D:ZZ")
 False
+
 ```
 
 ## 🔮 Features
