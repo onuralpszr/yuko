@@ -48,6 +48,8 @@ False
 True
 >>> validx.mac_address("00:1A:2B:3C:4D:ZZ")
 False
+>>> validx.md5("d41d8cd98f00b204e9800998ecf8427e")
+True
 
 ```
 
@@ -60,6 +62,7 @@ ValidX provides validators of the following:
 - IP Address (ipv4, ipv6, both) Validation
 - Domain Validation
 - Mac Address Validation
+- Hash (MD5, SHA1, SHA224, SHA256, SHA512) Validation
 
 ## 💻 Adding New Validators
 If you want to contribute a new validator, please follow these guidelines:
