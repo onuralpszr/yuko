@@ -63,6 +63,7 @@ ValidX provides validators of the following:
 - Domain Validation
 - Mac Address Validation
 - Hash (MD5, SHA1, SHA224, SHA256, SHA512) Validation
+- URL Validation
 
 ## 💻 Adding New Validators
 If you want to contribute a new validator, please follow these guidelines:
