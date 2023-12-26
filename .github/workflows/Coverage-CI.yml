@@ -3,6 +3,7 @@ name: Coverage CI
 on:
     push:
       branches:
+        - develop
         - main
       tags:
         - '*'
