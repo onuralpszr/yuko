@@ -1,65 +1,65 @@
-# ValidX  🦀 🤝 🐍
+# Yuko  🦀 🤝 🐍
 
 <p align="center">
-  <a href="https://github.com/onuralpszr/validX"><img style="width:25%;" src="https://raw.githubusercontent.com/onuralpszr/validX/main/logo/validx_logo.png" alt="ValidX"></a>
+  <a href="https://github.com/onuralpszr/yuko"><img style="width:25%;" src="https://raw.githubusercontent.com/onuralpszr/yuko/main/logo/yuko_logo.png" alt="Yuko"></a>
 </p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/onuralpszr/validX/main.svg)](https://results.pre-commit.ci/latest/github/onuralpszr/validX/main)
-[![Build & Release - CI](https://github.com/onuralpszr/validX/actions/workflows/CI.yml/badge.svg)](https://github.com/onuralpszr/validX/actions/workflows/CI.yml)
-[![Coverage CI](https://github.com/onuralpszr/validX/actions/workflows/Coverage-CI.yml/badge.svg)](https://github.com/onuralpszr/validX/actions/workflows/Coverage-CI.yml)
-[![codecov](https://codecov.io/gh/onuralpszr/validX/graph/badge.svg?token=NWUYIBUCBA)](https://codecov.io/gh/onuralpszr/validX)
-[![CodeFactor](https://www.codefactor.io/repository/github/onuralpszr/validx/badge)](https://www.codefactor.io/repository/github/onuralpszr/validx)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/onuralpszr/yuko/main.svg)](https://results.pre-commit.ci/latest/github/onuralpszr/yuko/main)
+[![Build & Release - CI](https://github.com/onuralpszr/yuko/actions/workflows/CI.yml/badge.svg)](https://github.com/onuralpszr/yuko/actions/workflows/CI.yml)
+[![Coverage CI](https://github.com/onuralpszr/yuko/actions/workflows/Coverage-CI.yml/badge.svg)](https://github.com/onuralpszr/yuko/actions/workflows/Coverage-CI.yml)
+[![codecov](https://codecov.io/gh/onuralpszr/yuko/graph/badge.svg?token=NWUYIBUCBA)](https://codecov.io/gh/onuralpszr/yuko)
+[![CodeFactor](https://www.codefactor.io/repository/github/onuralpszr/yuko/badge)](https://www.codefactor.io/repository/github/onuralpszr/yuko)
 
 
-ValidX is a Python package that provides Rust-backed validators for common validation tasks. This project aims to enhance the performance of validation operations by leveraging Rust's speed ⚡️, while still being easily accessible from Python.
+Yuko is a Python package that provides Rust-backed validators for common validation tasks. This project aims to enhance the performance of validation operations by leveraging Rust's speed ⚡️, while still being easily accessible from Python.
 
 ## 🛠 Installation
 
 The package is not yet available on PyPI, but you can install it directly from the source:
 
 ```bash
-pip install git+https://github.com/onuralpszr/validX.git
+pip install git+https://github.com/onuralpszr/yuko.git
 ```
 
 ## 🔥 Usage
 
 ```python
->>> import validx
->>> validx.email('loremipsum@example.com')
+>>> import yuko
+>>> yuko.email('loremipsum@example.com')
 True
->>> validx.email('loremipsum')
+>>> yuko.email('loremipsum')
 False
->>> validx.country_code('TR')
+>>> yuko.country_code('TR')
 True
->>> validx.country_code('INVALID')
+>>> yuko.country_code('INVALID')
 False
->>> validx.ip_address("127.0.0.1","ipv4")
+>>> yuko.ip_address("127.0.0.1","ipv4")
 True
->>> validx.ip_address("257.0.0.1","ipv4")
+>>> yuko.ip_address("257.0.0.1","ipv4")
 False
->>> validx.ip_address("1:2:3:4:5:6:7:8", "ipv6")
+>>> yuko.ip_address("1:2:3:4:5:6:7:8", "ipv6")
 True
->>> validx.ip_address("0.0.0.0", "both")
+>>> yuko.ip_address("0.0.0.0", "both")
 True
->>> validx.domain("example.com")
+>>> yuko.domain("example.com")
 True
->>> validx.domain("example.com.")
+>>> yuko.domain("example.com.")
 False
->>> validx.domain("example")
+>>> yuko.domain("example")
 False
->>> validx.mac_address("01:23:45:67:ab:CD")
+>>> yuko.mac_address("01:23:45:67:ab:CD")
 True
->>> validx.mac_address("00:1A:2B:3C:4D:ZZ")
+>>> yuko.mac_address("00:1A:2B:3C:4D:ZZ")
 False
->>> validx.md5("d41d8cd98f00b204e9800998ecf8427e")
+>>> yuko.md5("d41d8cd98f00b204e9800998ecf8427e")
 True
 
 ```
 
 ## 🔮 Features
 
-ValidX provides validators of the following:
+Yuko provides validators of the following:
 
 - Email Validation
 - Country Code(Alpha-3, Alpha-2, Numeric) Validation
