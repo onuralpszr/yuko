@@ -10,6 +10,7 @@ on:
     branches:
       - main
       - master
+      - develop
     tags:
       - '*'
   pull_request:
