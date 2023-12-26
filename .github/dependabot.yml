@@ -6,11 +6,18 @@ updates:
     schedule:
       interval: "daily"
     commit-message:
-      prefix: ⬆️
+      prefix: "chore(deps): ⬆️"
   # Python
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
       interval: "daily"
     commit-message:
-      prefix: ⬆️
+      prefix: "chore(deps): ⬆️"
+  # Rust
+  - package-ecosystem: "cargo"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore(deps): ⬆️"
