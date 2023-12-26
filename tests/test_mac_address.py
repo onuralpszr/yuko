@@ -1,6 +1,6 @@
 import pytest
 
-import validx
+import yuko
 
 
 @pytest.mark.parametrize(
@@ -23,4 +23,4 @@ import validx
     ],
 )
 def test_mac_address(mac_address: str, expected: bool):
-    assert validx.mac_address(mac_address) == expected
+    assert yuko.mac_address(mac_address) == expected

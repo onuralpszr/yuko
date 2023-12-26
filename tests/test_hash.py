@@ -1,4 +1,4 @@
-import validx
+import yuko
 import pytest
 
 
@@ -19,7 +19,7 @@ import pytest
     ],
 )
 def test_md5(hash: str, expected: bool):
-    assert validx.md5(hash) == expected
+    assert yuko.md5(hash) == expected
 
 
 @pytest.mark.parametrize(
@@ -39,7 +39,7 @@ def test_md5(hash: str, expected: bool):
     ],
 )
 def test_sha1(hash: str, expected: bool):
-    assert validx.sha1(hash) == expected
+    assert yuko.sha1(hash) == expected
 
 
 # test sha224
@@ -59,7 +59,7 @@ def test_sha1(hash: str, expected: bool):
     ],
 )
 def test_sha224(hash: str, expected: bool):
-    assert validx.sha224(hash) == expected
+    assert yuko.sha224(hash) == expected
 
 
 # test sha256
@@ -78,7 +78,7 @@ def test_sha224(hash: str, expected: bool):
     ],
 )
 def test_sha256(hash: str, expected: bool):
-    assert validx.sha256(hash) == expected
+    assert yuko.sha256(hash) == expected
 
 
 # test sha512
@@ -118,4 +118,4 @@ def test_sha256(hash: str, expected: bool):
     ],
 )
 def test_sha512(hash: str, expected: bool):
-    assert validx.sha512(hash) == expected
+    assert yuko.sha512(hash) == expected

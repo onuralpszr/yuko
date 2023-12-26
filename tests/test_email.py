@@ -1,4 +1,4 @@
-import validx
+import yuko
 import pytest
 
 
@@ -17,4 +17,4 @@ import pytest
     ],
 )
 def test_email(email: str, expected: bool):
-    assert validx.email(email) == expected
+    assert yuko.email(email) == expected

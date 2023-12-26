@@ -1,5 +1,5 @@
 {
-    "name": "validx",
+    "name": "yuko",
     "image": "mcr.microsoft.com/devcontainers/rust:bullseye",
     "postCreateCommand": "bash .devcontainer/post_create.sh",
     "customizations": {

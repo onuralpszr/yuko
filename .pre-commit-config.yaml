@@ -85,7 +85,7 @@ repos:
     rev: v1.8.0
     hooks:
       - id: mypy
-        entry: mypy python/validx/
+        entry: mypy python/yuko/
         pass_filenames: false
   - repo: https://github.com/codespell-project/codespell
     rev: v2.2.6

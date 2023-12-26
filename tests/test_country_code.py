@@ -1,4 +1,4 @@
-import validx
+import yuko
 import pytest
 
 
@@ -16,4 +16,4 @@ import pytest
     ],
 )
 def test_country_code(country_code: str, expected: bool):
-    assert validx.country_code(country_code) == expected
+    assert yuko.country_code(country_code) == expected

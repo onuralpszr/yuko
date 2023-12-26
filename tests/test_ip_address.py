@@ -1,4 +1,4 @@
-import validx
+import yuko
 import pytest
 
 
@@ -38,4 +38,4 @@ import pytest
     ],
 )
 def test_ip_address(ip_address: str, protocol: str, expected: bool):
-    assert validx.ip_address(ip_address, protocol) == expected
+    assert yuko.ip_address(ip_address, protocol) == expected
