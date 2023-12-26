@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 - 🐞 import fix for validx.[any imports access] (#12)
 - Fix coverage errors
 - Logo url fixed
+- 🐞 actions/upload-artifact@v4 conflict fix
 
 ### Documentation
 
@@ -44,6 +45,8 @@ All notable changes to this project will be documented in this file.
 - Add logo for project (#31)
 - Change project name in readme file (#32)
 - 🚀 project renamed to yuko
+- 🚀 git cliff config and CHANGELOG generated
+- 🚀 dependabot.yml added (#34)
 
 ### Miscellaneous Tasks
 
@@ -54,10 +57,21 @@ All notable changes to this project will be documented in this file.
 - 👷 rustsec audit check added
 - ⬆ pre_commit autoupdate
 - ⬆ pre_commit autoupdate
+- Add develop name into CI files
+- Gitattribute file added
+- 👷 dependabot prefix updated
+- 👷 dependabot rust package check added
+- 👷 mergify github action config added
+- Funding.yml added
+- Github action settings, bot configs updated. #39
 
 ### Refactor
 
 - Improve domain validator and fix tests
+
+### Styling
+
+- 💄 .editorconfig added
 
 ### Testing
 
