@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - Fix coverage errors
 - Logo url fixed
 - 🐞 actions/upload-artifact@v4 conflict fix
+- 🐞 actions/upload-artifact@v4 download path fix
 
 ### Documentation
 
@@ -20,6 +21,7 @@ All notable changes to this project will be documented in this file.
 - 📝 codefactor badge added
 - Add hash validator to readme with examples
 - Logo resized
+- 📝 changelog updated
 
 ### Features
 
@@ -47,6 +49,7 @@ All notable changes to this project will be documented in this file.
 - 🚀 project renamed to yuko
 - 🚀 git cliff config and CHANGELOG generated
 - 🚀 dependabot.yml added (#34)
+- 🚀 yuko __version__ added
 
 ### Miscellaneous Tasks
 

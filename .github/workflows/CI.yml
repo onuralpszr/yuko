@@ -110,8 +110,6 @@ jobs:
     needs: [linux, windows, macos, sdist]
     steps:
       - uses: actions/download-artifact@v4
-        with:
-          name: wheels
       - name: Publish to PyPI
         uses: PyO3/maturin-action@v1
         env:
