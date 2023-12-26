@@ -1,5 +1,9 @@
 # ValidX  🦀 🤝 🐍
 
+<p align="center">
+  <a href="https://github.com/onuralpszr/validX"><img src="https://raw.githubusercontent.com/onuralpszr/validX/logo/validx_logo.png" alt="ValidX"></a>
+</p>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/onuralpszr/validX/main.svg)](https://results.pre-commit.ci/latest/github/onuralpszr/validX/main)
 [![Build & Release - CI](https://github.com/onuralpszr/validX/actions/workflows/CI.yml/badge.svg)](https://github.com/onuralpszr/validX/actions/workflows/CI.yml)
