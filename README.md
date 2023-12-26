@@ -1,7 +1,7 @@
 # ValidX  🦀 🤝 🐍
 
 <p align="center">
-  <a href="https://github.com/onuralpszr/validX"><img src="https://raw.githubusercontent.com/onuralpszr/validX/main/logo/validx_logo.png" alt="ValidX"></a>
+  <a href="https://github.com/onuralpszr/validX"><img style="width:25%;" src="https://raw.githubusercontent.com/onuralpszr/validX/main/logo/validx_logo.png" alt="ValidX"></a>
 </p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
