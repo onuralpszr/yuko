@@ -16,7 +16,7 @@ use pyo3::prelude::*;
 use url_valid::url;
 
 #[pymodule]
-fn validx(_py: Python, m: &PyModule) -> PyResult<()> {
+fn yuko(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(country_code, m)?)?;
     m.add_function(wrap_pyfunction!(email, m)?)?;
     m.add_function(wrap_pyfunction!(ip_address, m)?)?;

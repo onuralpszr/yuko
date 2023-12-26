@@ -1,4 +1,4 @@
-import validx
+import yuko
 import pytest
 
 
@@ -19,4 +19,4 @@ import pytest
     ],
 )
 def test_url(url: str, expected: bool):
-    assert validx.url(url) == expected
+    assert yuko.url(url) == expected

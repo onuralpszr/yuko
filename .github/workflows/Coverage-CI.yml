@@ -55,6 +55,6 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: coverage.lcov,coverage.xml
-          name: validx-coverage-${{ matrix.os }}
+          name: yuko-coverage-${{ matrix.os }}
           fail_ci_if_error: true
           verbose: true

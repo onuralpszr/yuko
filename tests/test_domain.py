@@ -1,5 +1,5 @@
 import pytest
-import validx
+import yuko
 
 
 # pytest parametrize
@@ -23,4 +23,4 @@ import validx
     ],
 )
 def test_domain(domain: str, expected: bool):
-    assert validx.domain(domain, False, False) == expected
+    assert yuko.domain(domain, False, False) == expected
