@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "yuko"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Rust based validation library for Python"
 authors = ["Onuralp SEZER <thunderbirdtr@gmail.com>","Kader MİYANYEDİ <Kadermiyanyedi@hotmail.com>"]
 maintainers = ["Onuralp SEZER <thunderbirdtr@gmail.com>","Kader MİYANYEDİ <Kadermiyanyedi@hotmail.com>"]
@@ -24,9 +24,8 @@ build-backend = "maturin"
 
 [project]
 name = "yuko"
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 classifiers = [
-    "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
@@ -38,6 +37,19 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
+dynamic = [
+    "authors",
+    "description",
+    "license",
+    "readme",
+    "version"
+]
+
+[project.urls]
+"Source Code" = "https://github.com/onuralpszr/yuko"
+Issues = "https://github.com/onuralpszr/yuko/issues"
+Documentation = "https://github.com/onuralpszr/yuko"
+Changelog = "https://github.com/onuralpszr/yuko/blob/develop/CHANGELOG.md"
 
 
 [tool.maturin]

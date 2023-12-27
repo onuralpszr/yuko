@@ -1,8 +1,11 @@
-# Yuko  🦀 🤝 🐍
+
 
 <p align="center">
-  <a href="https://github.com/onuralpszr/yuko"><img style="width:25%;" src="https://raw.githubusercontent.com/onuralpszr/yuko/main/logo/yuko_logo.png" alt="Yuko"></a>
+  <a href="https://github.com/onuralpszr/yuko"><img src="https://raw.githubusercontent.com/onuralpszr/yuko/main/logo/yuko_logo.png" alt="Yuko"></a>
 </p>
+
+<h1 style="font-style: italic;" align="center">Yuko (有効)</h1>
+
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/onuralpszr/yuko/main.svg)](https://results.pre-commit.ci/latest/github/onuralpszr/yuko/main)
@@ -10,6 +13,24 @@
 [![Coverage CI](https://github.com/onuralpszr/yuko/actions/workflows/Coverage-CI.yml/badge.svg)](https://github.com/onuralpszr/yuko/actions/workflows/Coverage-CI.yml)
 [![codecov](https://codecov.io/gh/onuralpszr/yuko/graph/badge.svg?token=NWUYIBUCBA)](https://codecov.io/gh/onuralpszr/yuko)
 [![CodeFactor](https://www.codefactor.io/repository/github/onuralpszr/yuko/badge)](https://www.codefactor.io/repository/github/onuralpszr/yuko)
+
+<p align="center">
+<a href="https://pypi.org/project/yuko" target="_blank">
+    <img src="https://img.shields.io/pypi/v/yuko?color=%2334D058&label=pypi%20package" alt="Package version">
+</a>
+<a href="https://pypi.org/project/yuko" target="_blank">
+    <img src="https://img.shields.io/pypi/dm/yuko?color=red" alt="Download Count">
+</a>
+<a href="https://pypi.org/project/yuko" target="_blank">
+    <img src="https://img.shields.io/pypi/pyversions/yuko.svg?color=%2334D058" alt="Supported Python versions">
+</a>
+<a href="https://pypi.org/project/yuko" target="_blank">
+    <img src="https://img.shields.io/pypi/status/yuko?color=orange" alt="Project Status">
+</a>
+<a href="https://makeapullrequest.com" target="_blank">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
+</a>
+</p>
 
 
 Yuko is a Python package that provides Rust-backed validators for common validation tasks. This project aims to enhance the performance of validation operations by leveraging Rust's speed ⚡️, while still being easily accessible from Python.
