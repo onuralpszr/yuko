@@ -58,7 +58,7 @@ features = ["pyo3/extension-module"]
 
 
 [tool.mypy]
-python_version = "3.7"
+python_version = "3.8"
 disallow_untyped_defs = true
 disallow_incomplete_defs = true
 warn_no_return = true
