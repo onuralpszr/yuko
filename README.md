@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <a href="https://github.com/onuralpszr/yuko"><img src="https://raw.githubusercontent.com/onuralpszr/yuko/main/logo/yuko_logo.png" alt="Yuko"></a>
+  <a href="https://github.com/onuralpszr/yuko"><img src="https://raw.githubusercontent.com/onuralpszr/yuko/develop/logo/yuko_logo.png" alt="Yuko"></a>
 </p>
 
 <h1 style="font-style: italic;" align="center">Yuko (有効)</h1>
