@@ -37,10 +37,8 @@ Yuko is a Python package that provides Rust-backed validators for common validat
 
 ## 🛠 Installation
 
-The package is not yet available on PyPI, but you can install it directly from the source:
-
 ```bash
-pip install git+https://github.com/onuralpszr/yuko.git
+pip install yuko
 ```
 
 ## 🔥 Usage
