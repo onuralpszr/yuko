@@ -52,7 +52,7 @@ jobs:
           pytest tests --cov-report xml
           cargo llvm-cov --no-run --lcov --output-path coverage.lcov
 
-      - uses: codecov/codecov-action@v3
+      - uses: codecov/codecov-action@v4
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: coverage.lcov,coverage.xml
