@@ -9,5 +9,5 @@ name = "yuko"
 crate-type = ["cdylib"]
 
 [dependencies]
-pyo3 = "0.20.3"
+pyo3 = "0.21.0"
 regex = "1.10.4"
