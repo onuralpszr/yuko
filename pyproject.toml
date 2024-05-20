@@ -11,7 +11,7 @@ license = "MIT"
 python = ">=3.8"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.2.0"
+pytest = "^8.2.1"
 maturin = "^1.5.1"
 pre-commit = "^3.5.0"
 coverage = "^7.5.1"
