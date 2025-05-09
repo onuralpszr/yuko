@@ -1,32 +1,15 @@
-[tool.poetry]
+[project]
 name = "yuko"
 version = "0.1.1"
 description = "A Rust based validation library for Python"
-authors = ["Onuralp SEZER <thunderbirdtr@gmail.com>","Kader MİYANYEDİ <Kadermiyanyedi@hotmail.com>"]
-maintainers = ["Onuralp SEZER <thunderbirdtr@gmail.com>","Kader MİYANYEDİ <Kadermiyanyedi@hotmail.com>"]
 readme = "README.md"
-license = "MIT"
-
-[tool.poetry.dependencies]
-python = ">=3.8"
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.3.5"
-maturin = "^1.8.4"
-pre-commit = "^3.5.0"
-coverage = "^7.6.1"
-pytest-cov = "^5.0.0"
-
-
-[build-system]
-requires = ["maturin>=0.14,<0.15"]
-build-backend = "maturin"
-
-[project]
-name = "yuko"
-requires-python = ">=3.8"
+authors = [
+    {name = "Onuralp SEZER", email = "thunderbirdtr@gmail.com"},
+    {name = "Kader MİYANYEDİ", email = "Kadermiyanyedi@hotmail.com"},
+]
+license = {text = "MIT License"}
+requires-python = ">=3.9"
 classifiers = [
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
@@ -34,15 +17,23 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Rust",
-    "Programming Language :: Python :: Implementation :: CPython",
-    "Programming Language :: Python :: Implementation :: PyPy",
+    "Programming Language :: Python",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
 ]
-dynamic = [
-    "authors",
-    "description",
-    "license",
-    "readme",
-    "version"
+
+[dependency-groups]
+dev = [
+    "uv>=0.4.20",
+    "pytest>=8.3.3",
+    "ruff>=0.6.9",
+    "bandit>=1.8.3",
+    "mypy>=1.15.0",
+    "pre-commit>=4.2.0",
+    "maturin>=1.8.1",
+    "coverage>=7.6.1",
+    "pytest-cov>=5.0.0",
 ]
 
 [project.urls]
@@ -56,9 +47,12 @@ Changelog = "https://github.com/onuralpszr/yuko/blob/develop/CHANGELOG.md"
 python-source = "python"
 features = ["pyo3/extension-module"]
 
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
 
 [tool.mypy]
-python_version = "3.8"
+python_version = "3.9"
 disallow_untyped_defs = true
 disallow_incomplete_defs = true
 warn_no_return = true
