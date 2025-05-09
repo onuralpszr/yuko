@@ -12,11 +12,12 @@ use email_valid::email;
 use hashes_valid::{md5, sha1, sha224, sha256, sha512};
 use ip_address_valid::ip_address;
 use mac_address_valid::mac_address;
-use pyo3::prelude::*;
 use url_valid::url;
 
+use pyo3::prelude::*;
+
 #[pymodule]
-fn yuko(_py: Python, m: &PyModule) -> PyResult<()> {
+fn yuko(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(country_code, m)?)?;
     m.add_function(wrap_pyfunction!(email, m)?)?;
     m.add_function(wrap_pyfunction!(ip_address, m)?)?;
