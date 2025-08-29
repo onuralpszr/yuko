@@ -17,5 +17,5 @@ crate-type = ["cdylib"]
 
 [dependencies]
 chrono = { version = "0.4.41", features = ["serde"] }
-pyo3 = "0.25.1"
+pyo3 = "0.26.0"
 regex = "1.11.2"
